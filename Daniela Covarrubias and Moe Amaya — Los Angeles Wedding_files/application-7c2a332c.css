@@ -6074,12 +6074,12 @@ canvas {
     color: #11223F
 }
 
-.site-footer a {
+/* .site-footer a {
     text-decoration: underline
-}
+} */
 
 .footer-mark {
-    width: 91px;
+    width: 195px;
     -webkit-animation: spin 9000ms linear infinite;
     animation: spin 9000ms linear infinite
 }
@@ -7321,7 +7321,7 @@ div.index-br-green-dots {
     zoom: 0.5;
     -webkit-transform: scale(-1);
     transform: scale(-1);
-    z-index: 4
+    /* z-index: 4 */
 }
 
 @media only screen and (min-width: 770px) {
