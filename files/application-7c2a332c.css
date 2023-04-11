@@ -5725,12 +5725,14 @@ h6 {
 p.large {
     font-size: 24px;
     font-family: "Canela Web", serif;
-    line-height: 1.6
+    line-height: 1.6;
+    text-align: justify;
 }
 
 @media only screen and (min-width: 770px) {
     p.large {
-        font-size: 32px
+        font-size: 32px;
+        text-align: justify;
     }
 }
 
@@ -6602,7 +6604,7 @@ div.index-bl-yellow-md {
     left: 25%;
     z-index: 0;
     -webkit-transform-origin: 50% 90%;
-    transform-origin: 50% 90%
+    transform-origin: 50% 90%;
 }
 
 @media only screen and (min-width: 770px) {
@@ -7178,7 +7180,9 @@ div.index-br-green-dots {
 
 .index-event__num {
     position: relative;
-    top: 36px
+    top: 0px;
+    display: inline-block;
+    width: 100px;
 }
 
 .index-event__detail {
@@ -7321,7 +7325,7 @@ div.index-br-green-dots {
     zoom: 0.5;
     -webkit-transform: scale(-1);
     transform: scale(-1);
-    /* z-index: 4 */
+    opacity: 0.5;
 }
 
 @media only screen and (min-width: 770px) {
@@ -7331,7 +7335,8 @@ div.index-br-green-dots {
         right: auto;
         -webkit-transform: none;
         transform: none;
-        zoom: 1
+        zoom: 1;
+        opacity: 0.5;
     }
 }
 
@@ -7356,7 +7361,8 @@ div.index-br-green-dots {
     /* z-index: 1;? */
     zoom: 0.55;
     -webkit-transform: scale(-1);
-    transform: scale(-1)
+    transform: scale(-1);
+    opacity: 0.25;
 }
 
 @media only screen and (min-width: 770px) {
@@ -7366,7 +7372,8 @@ div.index-br-green-dots {
         right: auto;
         -webkit-transform: none;
         transform: none;
-        zoom: 1
+        zoom: 1;
+        opacity: 0.25;
     }
 }
 
@@ -7841,7 +7848,8 @@ div.index-br-green-dots {
     position: absolute;
     top: -200px;
     left: -330px;
-    zoom: 0.5
+    zoom: 0.5;
+    opacity: 0.25;
 }
 
 @media only screen and (min-width: 770px) {
@@ -7849,8 +7857,9 @@ div.index-br-green-dots {
         top: -20px;
         left: -180px;
         z-index: 2;
-        zoom: 1
-    }
+        zoom: 1;
+        opacity: 0.25;
+}
 }
 
 .index-rsvp__right {
@@ -8602,4 +8611,89 @@ div.save-br-green-dots svg {
         -ms-flex: 0 0 24%;
         flex: 0 0 24%
     }
+}
+
+/* Animations */
+
+.index-bl-yellow-md {
+    animation: myAnim 10s ease-in-out 2s infinite alternate-reverse forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px) rotate(-10deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+.index-bl-red-flower{
+    animation: myAnim1 5s ease-in-out 2s infinite alternate-reverse forwards;
+}
+
+@keyframes myAnim1 {
+	0% {
+		transform: translateX(0px) rotate(40deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+.index-br-red-outline{
+    animation: myAnim2 5s ease-in-out 2s infinite alternate-reverse forwards;
+}
+
+@keyframes myAnim2 {
+	0% {
+		transform: translateY(10px) rotate(10deg);
+	}
+
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+}
+
+.index-br-green-leaf, .index-br-dark-outline, .index-br-green-dots {
+    animation: myAnim3 4s ease-in-out 2s infinite alternate-reverse forwards;
+}
+@keyframes myAnim3 {
+	0% {
+		transform: translateX(20px) rotate(0deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+.index-br-pink {
+    animation: myAnim4 5s ease-in-out 2s infinite alternate-reverse forwards;
+}
+@keyframes myAnim4 {
+	0% {
+		transform: translateX(0px) rotate(10deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+.index-bl-pink-md{
+    animation: myAnim5 15s ease-in-out 2s infinite alternate-reverse forwards;
+}
+
+@keyframes myAnim5 {
+	0% {
+		transform: translateX(0px) rotate(10deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
 }
