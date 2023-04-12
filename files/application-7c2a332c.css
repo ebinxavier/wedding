@@ -7071,7 +7071,8 @@ div.index-br-green-dots {
     position: absolute;
     right: -140px;
     top: 80%;
-    zoom: 0.5
+    zoom: 0.5;
+    opacity: 0.2;
 }
 
 @media only screen and (min-width: 770px) {
@@ -7325,7 +7326,7 @@ div.index-br-green-dots {
     zoom: 0.5;
     -webkit-transform: scale(-1);
     transform: scale(-1);
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 @media only screen and (min-width: 770px) {
@@ -7336,7 +7337,7 @@ div.index-br-green-dots {
         -webkit-transform: none;
         transform: none;
         zoom: 1;
-        opacity: 0.5;
+        opacity: 0.2;
     }
 }
 
@@ -7382,7 +7383,8 @@ div.index-br-green-dots {
     top: 0px;
     right: -90px;
     z-index: 1;
-    zoom: 0.6
+    zoom: 0.6;
+    opacity: .2;
 }
 
 @media only screen and (min-width: 770px) {
