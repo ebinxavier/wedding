@@ -7492,13 +7492,15 @@ div.index-br-green-dots {
     top: -350px;
     left: -240px;
     z-index: 2;
-    zoom: 0.5
+    zoom: 0.5;
+    opacity: .2;
 }
 
 @media only screen and (min-width: 770px) {
     .index-la__left {
         left: -120px;
-        zoom: 1
+        zoom: 1;
+        opacity: .2;
     }
 }
 
@@ -7507,14 +7509,16 @@ div.index-br-green-dots {
     top: -150px;
     right: -190px;
     z-index: 2;
-    zoom: 0.5
+    zoom: 0.5;
+    opacity: .2;
 }
 
 @media only screen and (min-width: 770px) {
     .index-la__right {
         top: -20px;
         right: -120px;
-        zoom: 1
+        zoom: 1;
+        opacity: .2;
     }
 }
 
